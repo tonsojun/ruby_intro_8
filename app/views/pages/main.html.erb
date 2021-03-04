@@ -1,0 +1,9 @@
+<h1>Number Game</h1>
+
+<form action="/increase" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <input type="submit" value="increase">
+</form> 
+
+
+<%= session[:number] %>
